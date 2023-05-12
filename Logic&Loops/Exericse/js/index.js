@@ -29,10 +29,23 @@ let computers = [600, 1000, 400, 300, 600, 200, 100, 400, 500];
 let requiredPower = 3500; 
 let totalPower = 0;
 
-
+for (let i = 0; i < computers.length; i++) {
+    totalPower += computers[i];
+    console.log(totalPower);
+}
+if (totalPower <= requiredPower) {
+    console.log("There is enough power!")
+} else {
+    console.log("There is Not enough power!")
+}
 // Console Log all Odd number between 1 & 100 using the modulo operator... 
 
-
+for (let i = 0; i < 100; i++) {
+    if (i % 2 !== 0){
+        console.log(i)
+    };
+    
+}
 
 // Calculate the Average for te following student marks
 // Output the average to the console with the string -> "The Average is"
