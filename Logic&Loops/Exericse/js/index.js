@@ -42,7 +42,7 @@ if (totalPower <= requiredPower) {
 
 for (let i = 0; i < 100; i++) {
     if (i % 2 !== 0){
-        console.log(i)
+        console.log(i);
     };
     
 }
@@ -51,7 +51,14 @@ for (let i = 0; i < 100; i++) {
 // Output the average to the console with the string -> "The Average is"
 
 let marks = [23, 45, 67, 55, 80, 90, 45, 60, 56, 30, 31];
+let totalMarks = 0
 
+for (let i = 0; i < marks.length; i++) {
+    totalMarks = totalMarks + marks[i];   
+}
+
+let averageTotal = totalMarks/marks.length
+console.log(averageTotal);
 
  // Use the following data 
 let ageOne = 23;
@@ -64,12 +71,26 @@ let userTwo = "Jacob";
 // If True, console log -> "User and Age Match"
 // If False, console log -> "User and Age Do Not Match"
 
+if (userOne === "Josh" && ageOne > 18) {
+    console.log("User and Age Match");
+} else {
+    console.log("User and Age Do Not Match");
+}
 
+if (userTwo === "Jacob" && ageTwo < 18 ) {
+    console.log("User and Age Do Not Match");
+} else {
+    console.log("User and Age Match");
+}
 
 // Write a Script that checks to see if userTwo name is Peter OR that this user is Younger than 18
 // If True, console log -> "User is Younger than 18 or is Peter"
 // If False, console log -> "User is Younger than 18 and is Not Peter"
 
-
+if (userTwo === "Peter" || ageTwo < 18 ) {
+    console.log("User is Younger than 18 or is Peter");
+} else {
+    console.log("User is Younger than 18 and is Not Peter");
+}
 
 
